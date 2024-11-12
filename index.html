@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Field</title>
+
+    <style>
+         .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px; /* Space between grid items */
+            width: 300px; /* Adjust as needed */
+            margin: 0 auto;
+        }
+        .grid-item {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+            height: 2.5em;
+            width: 2.5em;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+        .grid-item:hover{
+            background-color: #468948;
+        }
+        .btn{
+            width: 60px;
+            height: 40px;
+            border-radius: 5px;
+            border: none;
+        }
+        .timerCls{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: greenyellow;
+            height: 3em;
+            padding: 4px;
+            box-sizing: border-box;
+            margin: 10px 0px;
+        }
+        .startBtn{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: greenyellow;
+            height: 3em;
+            padding: 4px;
+            box-sizing: border-box;
+            margin: 10px 0px;
+        }
+    </style>
+</head>
+<body>
+        <div id="timer" class="timerCls"> </div>
+        <div class="grid-container">
+            <div class="grid-item" id="item-1">1</div>
+            <div class="grid-item" id="item-2">2</div>
+            <div class="grid-item" id="item-3">3</div>
+            <div class="grid-item" id="item-4">4</div>
+            <div class="grid-item" id="item-5">5</div>
+            <div class="grid-item" id="item-6">6</div>
+            <div class="grid-item" id="item-7">7</div>
+            <div class="grid-item" id="item-8">8</div>
+            <div class="grid-item" id="item-9">9</div>
+        </div>
+        <div class="startBtn">
+            <button class="btn" onclick="startGame()">Start</button>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
